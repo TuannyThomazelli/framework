@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="manual.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instalação</title>
+</head>
+<body>
+
+    <h1>Manual de instalação: Node.js</h1>
+    <p>Para essa instalação, nós vamos usar a versão LTS (Long-term support, ou suporte de longo prazo, em português) porque é a mais estável. A versão Current é a mais atualizada, porém pode conter alguns bugs. Então, se você não precisa de alguma funcionalidade mais recente do Node, recomendamos que utilize a versão LTS.</p><br>
+
+    <h2>No Windows</h2>
+    <p>Para a instalação no Windows, vamos começar acessando a página de download do Node.js.</p><br>
+    <img src="/imagens/instalacao1.webp" auto=""><br>
+    <p>Ao clicar na opção Windows Installer da versão LTS, será iniciado o download automático do pacote instalador. Quando o download estiver concluído, basta clicar no instalador que foi baixado para que ele seja executado. A janela na imagem abaixo irá ser exibida e iremos prosseguir clicando em Next:</p><br>
+    <img src="/imagens/instalacao2.webp" auto=""><br>
+    <p>Após clicar em Next, chegamos à tela de licenças. Aqui basta preencher a checkbox para concordar com os termos de uso e avançar com o clique em Next novamente:</p><br>
+    <img src="/imagens/instalacao3.webp" auto=""><br>
+    <p>Clique em Next novamente. Na tela seguinte, vai aparecer a opção de alterar o local em que o Node será instalado. Optamos por manter o caminho padrão ao clicar em Next:</p><br>
+    <img src="/imagens/instalacao4.webp" auto=""><br>
+    <p>Selecione Next e na tela seguinte vamos escolher quais as funcionalidades do Node queremos que sejam instaladas. Aqui recomendo que não altere nada e faça a instalação de todas. Caso queira alterar essa configuração, é importante garantir que ao menos as opções Node.js runtime, npm package manager e Add to PATH estejam selecionadas.</p><br>
+    <img src="/imagens/instalacao5.webp" auto=""><br>
+    <p>Em seguida, vai aparecer a opção de instalar as ferramentas para módulos nativos. Em algumas situações específicas, alguns pacotes do npm precisam ser compilados em sua máquina para rodarem no Windows sem impedimentos. Para isso, é necessário que essas ferramentas para módulos nativos estejam instaladas, pois elas irão cuidar da compatibilidade com o Windows.</p>
+    <p>Portanto, para evitar problemas futuros, vamos selecionar a checkbox para que seja feita a instalação automática dessas ferramentas, inclusive do Chocolatey, que é um gerenciador de pacotes para o Windows que vem para facilitar o processo de atualização e download dessas ferramentas através da linha de comando. Em seguida clicamos em Next:</p><br>
+    <img src="/imagens/instalacao6.webp" auto=""><br>
+    <p>Feito isso, basta selecionar a opção install, que vai aparecer na tela seguinte, e aguardar até que a instalação seja finalizada. Nesse momento, pode ser que algumas janelas do terminal se abram, como mostrado na imagem a seguir, que é justamente a responsável pela instalação das ferramentas para módulos nativos. Basta clicar em qualquer tecla para continuar e esperar até que seja finalizada:</p><br>
+    <img src="/imagens/instalacao7.webp" auto=""><br>
+    <p>Assim que a instalação terminar, é interessante que você reinicie a máquina, para garantir que Node.js foi escrito corretamente no caminho do PATH do Windows. Por fim, para verificar se a instalação ocorreu corretamente, basta abrir o Prompt de Comando e rodar os comandos node --version. Para verificar a versão do gerenciador de pacotes para Node (o NPM) rode os comandos npm --version, como indicado na imagem a seguir:</p><br>
+    <img src="/imagens/instalacao8.webp" auto=""><br>
+    <p>No meu caso, o Node foi instalado corretamente, porém o npm não estava na versão mais recente (até a data de publicação deste artigo, npm 8.15.0 para a versão LTS). Para corrigir, basta inserir o comando npm install -g npm@8.15.0, como mostrado na imagem abaixo:</p><br>
+    <img src="/imagens/instalacao9.webp" auto=""><br>
+    <p>Repetindo o comando npm --version, a versão foi corrigida, como podemos observar na imagem:</p><br>
+    <img src="/imagens/instalacao10.webp" auto=""><br>
+    <p>Agora basta digitar node, como indicado na imagem abaixo, e você já pode executar JavaScript através do terminal:</p>
+    <img src="/imagens/instalacao11.webp" auto=""><br>
+    <p>E pronto, assim concluímos a instalação do Node.js e verificamos que ele foi instalado corretamente no Windows!</p><br>
+
+    <h2>No MacOS</h2>
+    <p>A instalação no macOS é bastante similar com a instalação do Windows, pois também usa um pacote de instalação.</p>
+    <p>Inicialmente, vamos até o site de download do Node. As versões LTS já estão disponíveis por padrão. Então, selecionamos a opção macOS Installer (.pkg), como indicado na imagem abaixo:</p><br>
+    <img src="/imagens/instalacao12.webp" auto=""><br>
+    <p>Ao selecionarmos essa opção, o pacote de instalação será baixado. Assim que o download terminar, clicamos no arquivo baixado e executamos. Depois, podemos prosseguir ao clicar em *Continue*, sem nos esquecermos de aceitar os termos de uso.</p><br>
+    <img src="/imagens/instalacao13.webp" auto=""><br>
+    <p>Após clicar em Continue, teremos a seguinte tela:</p><br>
+    <img src="/imagens/instalacao14.jpg" auto=""><br>
+    <p>Clique em Close e agora vamos conferir se o Node e o npm foram realmente instalados. Isso é feito de forma parecida com a verificação no Linux. Comece digitando node --version e npm --version. Vai aparecer o seguinte resultado:</p><br>
+    <img src="/imagens/instalacao15.webp" auto=""><br>
+    <p>Esse resultado mostra que conseguimos concluir a instalação do Node e do npm.</p><br>
+
+    <button><a href="index.html">Voltar para a página inicial</a></button><br>
+
+</body>
+</html>
